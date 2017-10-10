@@ -1,6 +1,6 @@
 int sensorPin = 0;
 double alpha = 0.75;
-int period = 1500;
+int period = 1000;
 double change = 0.0;
 double minval = 0.0;
 #include <SimpleDHT.h>
@@ -8,13 +8,24 @@ int pinDHT11 = 3;
 SimpleDHT11 dht11;
 void setup ()
 {
-  Serial.begin (9600);
+  Serial.begin (250000);
   pinMode(13, OUTPUT); // onboard LED
  digitalWrite(13, LOW); // turn off onboard LED
+ pinMode(4, INPUT);
  pinMode(5, INPUT); // connect to Vibration Sensor S pin
+ delay(500);
 }
 void loop ()
 {
+  val = digitalRead(inPin);
+  byte button=0;// read input value
+  if (val == HIGH) {         // check if the input is HIGH (button released)
+    digitalWrite(ledPin, LOW);
+    button=0;// turn LED OFF
+  } else {
+    digitalWrite(ledPin, HIGH);
+    button=1;// turn LED ON
+  }
     static double oldValue = 0;
     static double oldChange = 0;
     byte temperature = 0;
@@ -44,8 +55,8 @@ void loop ()
   String thisString_2=String(humidity);
   String thisString_3=String(value);
   String thisString_4=String(tilt);
-  Serial.println(thisString_1+" "+thisString_2+" "+thisString_3+" "+thisString_4);
- 
-    delay (period);
+  String thisString_5=String(button);
+  Serial.println(thisString_1+" "+thisString_2+" "+thisString_3+" "+thisString_4+" "+thisString_5);
+ delay (period);
 }
 
