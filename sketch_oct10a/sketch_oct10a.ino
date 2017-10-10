@@ -6,13 +6,16 @@ double minval = 0.0;
 #include <SimpleDHT.h>
 int pinDHT11 = 3;
 SimpleDHT11 dht11;
+int inPin = 4;   // choose the input pin (for a pushbutton)
+int val = 0;
 void setup ()
 {
   Serial.begin (250000);
   pinMode(13, OUTPUT); // onboard LED
  digitalWrite(13, LOW); // turn off onboard LED
  pinMode(4, INPUT);
- pinMode(5, INPUT); // connect to Vibration Sensor S pin
+ pinMode(5, INPUT); 
+ 
  delay(500);
 }
 void loop ()
@@ -20,10 +23,8 @@ void loop ()
   val = digitalRead(inPin);
   byte button=0;// read input value
   if (val == HIGH) {         // check if the input is HIGH (button released)
-    digitalWrite(ledPin, LOW);
     button=0;// turn LED OFF
   } else {
-    digitalWrite(ledPin, HIGH);
     button=1;// turn LED ON
   }
     static double oldValue = 0;

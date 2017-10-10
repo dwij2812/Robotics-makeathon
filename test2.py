@@ -25,15 +25,14 @@ while 1:
     #print (temperature_c + ',' + time_hhmmss + ',' + date_mmddyyyy + ',' + temperature_location)
      
   #insert record
-    if(len(x)==4):
-      data = {'date':date_mmddyyyy,'time':time_hhmmss,'value1':x[0],'value2':x[1],'value3':x[2],'value4':x[3]}
+    if(len(x)==5):
+      data = {'date':date_mmddyyyy,'time':time_hhmmss,'Temperature':x[0],'Humidity':x[1],'HeartRate_constant':x[2],'Shock Switch':x[3],'Alert Button Press Status':x[4]}
       result = requests.post(firebase_url + '/' + temperature_location + '/temperature.json', data=json.dumps(data))
       print ('Record inserted. Result Code = ' + str(result.status_code) + ',' + result.text)
       time.sleep(fixed_interval)
     else:
-      print("bol na aunty aau kya")
+      print("Please Wait Initializing......")
     
   except IOError:
-    print("chacha")
     print('Error! Something went wrong.')
     time.sleep(fixed_interval)
