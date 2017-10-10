@@ -34,7 +34,8 @@ while 1:
       average0=sum(y0)/counter
       average1=sum(y1)/counter
       average2=sum(y2)/counter
-      data = {'date':date_mmddyyyy,'time':time_hhmmss,'Temperature':x[0],'Humidity':x[1],'HeartRate_constant':x[2],'Shock Switch':x[3],'Alert Button Press Status':x[4],'Average Teperature':average0,'Average Humidity':average1,'Average Heartrate':average2}
+      #data = {'date':date_mmddyyyy,'time':time_hhmmss,'Temperature':x[0],'Humidity':x[1],'HeartRate_constant':x[2],'Shock Switch':x[3],'Alert Button Press Status':x[4],'Average Teperature':average0,'Average Humidity':average1,'Average Heartrate':average2}
+      data={'Temperature':x[0],'Average Temperature':y0,'Humidity':x[1],'Average Humidity':y1,'Heart Rate':x[2],'Average Heartrate':y2}
       result = requests.post(firebase_url + '/sensor.json', data=json.dumps(data))
       print ('Record inserted. Result Code = ' + str(result.status_code) + ',' + result.text)
       time.sleep(fixed_interval)
