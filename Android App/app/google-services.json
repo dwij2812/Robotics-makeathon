@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43452011542",
+    "firebase_url": "https://iot-data-d6cb8.firebaseio.com",
+    "project_id": "iot-data-d6cb8",
+    "storage_bucket": "iot-data-d6cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43452011542:android:37e93712af3b0f8c",
+        "android_client_info": {
+          "package_name": "com.example.shantanu.arambha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43452011542-tpvvj9kqerbem0rfanati5pqjjs24jmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shantanu.arambha",
+            "certificate_hash": "e7e31b1a11cc31f1deeecb052fb6ea237dcd62a0"
+          }
+        },
+        {
+          "client_id": "43452011542-8pe4q5h8vq35hvfj6nu98982lk81kkkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ3wsoGGpdJvEaC3n4m8l42Qp2PvwY3j4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43452011542-8pe4q5h8vq35hvfj6nu98982lk81kkkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

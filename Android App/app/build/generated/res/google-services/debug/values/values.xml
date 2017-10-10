@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">43452011542-8pe4q5h8vq35hvfj6nu98982lk81kkkn.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://iot-data-d6cb8.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">43452011542</string>
+    <string name="google_api_key" translatable="false">AIzaSyDQ3wsoGGpdJvEaC3n4m8l42Qp2PvwY3j4</string>
+    <string name="google_app_id" translatable="false">1:43452011542:android:37e93712af3b0f8c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDQ3wsoGGpdJvEaC3n4m8l42Qp2PvwY3j4</string>
+    <string name="google_storage_bucket" translatable="false">iot-data-d6cb8.appspot.com</string>
+</resources>

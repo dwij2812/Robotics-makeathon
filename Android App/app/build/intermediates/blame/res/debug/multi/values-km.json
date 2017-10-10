@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Shantanu\\AndroidStudioProjects\\arambha\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 207,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "C:\\Users\\Shantanu\\.android\\build-cache\\df2e8af3166966edf8499c5bef29be1e5a660b66\\output\\res\\values-km\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 207,
+                        "endOffset": 492
+                    }
+                }
+            }
+        ]
+    }
+]
