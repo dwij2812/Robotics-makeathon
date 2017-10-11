@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<title>
+    Homepage::ElectroFaqs
+</title>
+
+<head>
+    <link href="/ui/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <a style="font-size:30px;cursor:pointer" onclick="openNav()" class="sidebar">&#9776;</a>
+        <a href="index.html">Home</a>
+        <a href="microcontrollers.html">Microcontrollers</a>
+        <div class="dropdown">
+            <button class="dropbtn">Calculators</button>
+            <div class="dropdown-content">
+                <a href="#">Resistance</a>
+                <a href="#">Potential</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="microcontrollers.html">Microcontrollers</a>
+        <a href="calculator.html">Calculators</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <img src="/ui/Logo.png" class="logo" />
+    <div class="Tagline">
+        <p>
+            <div class="tada">
+                The Complete Electronics solutions!
+            </div>
+        </p>
+
+    </div>
+    <div class="container_cyan">
+        <strong>Address:</strong>
+        <p>Room No-318 A block Boys Hostel VIT Chennai</p>
+        <strong>Reach Us on:</strong>
+        <p>908XXXXXXX</p>
+    </div>
+
+</body>
+
+</html>

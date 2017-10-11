@@ -1,0 +1,15 @@
+{
+  "name": "Dwij.Inc",
+  "version": "v1.1",
+  "description": "The complete electronics Faq's",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dwij Sukeshkumar Sheth",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
